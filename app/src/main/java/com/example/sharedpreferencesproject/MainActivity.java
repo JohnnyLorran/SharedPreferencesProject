@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         Log.i(TAG,"OnCreate: rodando!");
 
         sharedPreferences = getSharedPreferences(Pref_nome, Context.MODE_PRIVATE);
@@ -53,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
         dados.putBoolean("estoque",estoque);
 
         dados.apply();
+
+
         //dados.clear(); Apagar tudo
         //dados.remove("estoque"); remove apenas o estoque
 
@@ -70,9 +71,6 @@ public class MainActivity extends AppCompatActivity {
             txt5.setText("Estoque: Sim");
         else
             txt5.setText("Estoque: Não");
-
-
-
 
     }
 }
